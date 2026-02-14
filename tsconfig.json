@@ -1,0 +1,19 @@
+{
+  "include": ["env.d.ts", "**/*.ts", "**/*.tsx", ".react-router/types/**/*.ts"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "types": ["vite/client"],
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": { "~/*": ["./app/*"] },
+    "rootDirs": [".", "./.react-router/types"],
+    "noEmit": true
+  }
+}
